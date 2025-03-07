@@ -1,70 +1,70 @@
 [
     {
       "id": 1,
-      "image": "https://example.com/images/cycle1.jpg",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/kzsqykw0/cycle/x/z/r/26-speedx-matt-black-cycle-26-20-eastman-single-speed-139-original-imagbq7mkxmtzbx6.jpeg?q=90&crop=false",
       "name": "SpeedX Roadster",
       "details": "Lightweight aluminum frame with 21-speed gears.",
       "price": 15000
     },
     {
       "id": 2,
-      "image": "https://example.com/images/cycle2.jpg",
+      "image": "https://m.media-amazon.com/images/I/71kItDsb+2L._AC_SL1500_.jpg",
       "name": "Mountain King",
       "details": "Durable mountain bike with shock absorbers.",
       "price": 18000
     },
     {
       "id": 3,
-      "image": "https://example.com/images/cycle3.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBPGAPJWq8wwq3bewPU9Izxm6QyCXPnO_RCg&s",
       "name": "City Rider",
       "details": "Perfect for city roads with a comfortable seat.",
       "price": 12000
     },
     {
       "id": 4,
-      "image": "https://example.com/images/cycle4.jpg",
+      "image": "https://d2yn9m4p3q9iyv.cloudfront.net/specialized/2015/turbo-x/thumbs/1000/f29af.webp",
       "name": "TurboX Hybrid",
       "details": "Hybrid cycle suitable for both roads and trails.",
       "price": 20000
     },
     {
       "id": 5,
-      "image": "https://example.com/images/cycle5.jpg",
+      "image": "https://www.cyclesuperstore.ie/shop/pc/catalog/medium/688200.jpg",
       "name": "Racer Pro",
       "details": "High-speed racing bicycle with aerodynamic design.",
       "price": 25000
     },
     {
       "id": 6,
-      "image": "https://example.com/images/cycle6.jpg",
+      "image": "https://www.greenfinder-mobility.com/typo3temp/_processed_/csm_83d9a2547f3d18ef8f9b3c13f9a08693_66d4920779.jpg",
       "name": "Eco Ride",
       "details": "Eco-friendly bicycle with a lightweight frame.",
       "price": 10000
     },
     {
       "id": 7,
-      "image": "https://example.com/images/cycle7.jpg",
+      "image": "https://m.media-amazon.com/images/I/818qDh4XOLL.jpg",
       "name": "Trail Blazer",
       "details": "All-terrain cycle with strong suspension.",
       "price": 22000
     },
     {
       "id": 8,
-      "image": "https://example.com/images/cycle8.jpg",
+      "image": "https://bharathcyclehub.com/cdn/shop/products/2241_1200x1200.png?v=1690709082",
       "name": "Urban Cruiser",
       "details": "Stylish cycle designed for urban commuting.",
       "price": 17000
     },
     {
       "id": 9,
-      "image": "https://example.com/images/cycle9.jpg",
+      "image": "https://www.pmcycles.com.au/wp-content/uploads/2023/05/Scott-Speedster-40-Rim-Brake-2022-e1684843244530-300x183.png",
       "name": "Speedster Elite",
       "details": "Lightweight and super-fast road cycle.",
       "price": 26000
     },
     {
       "id": 10,
-      "image": "https://example.com/images/cycle10.jpg",
+      "image": "https://i.redd.it/6r16pm39dmjc1.png",
       "name": "Commute Easy",
       "details": "Comfortable and efficient for daily commutes.",
       "price": 14000
