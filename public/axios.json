@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/images/cycle1.jpg",
+      "name": "SpeedX Roadster",
+      "details": "Lightweight aluminum frame with 21-speed gears.",
+      "price": 15000
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/images/cycle2.jpg",
+      "name": "Mountain King",
+      "details": "Durable mountain bike with shock absorbers.",
+      "price": 18000
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/images/cycle3.jpg",
+      "name": "City Rider",
+      "details": "Perfect for city roads with a comfortable seat.",
+      "price": 12000
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/images/cycle4.jpg",
+      "name": "TurboX Hybrid",
+      "details": "Hybrid cycle suitable for both roads and trails.",
+      "price": 20000
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/images/cycle5.jpg",
+      "name": "Racer Pro",
+      "details": "High-speed racing bicycle with aerodynamic design.",
+      "price": 25000
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/images/cycle6.jpg",
+      "name": "Eco Ride",
+      "details": "Eco-friendly bicycle with a lightweight frame.",
+      "price": 10000
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/images/cycle7.jpg",
+      "name": "Trail Blazer",
+      "details": "All-terrain cycle with strong suspension.",
+      "price": 22000
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/images/cycle8.jpg",
+      "name": "Urban Cruiser",
+      "details": "Stylish cycle designed for urban commuting.",
+      "price": 17000
+    },
+    {
+      "id": 9,
+      "image": "https://example.com/images/cycle9.jpg",
+      "name": "Speedster Elite",
+      "details": "Lightweight and super-fast road cycle.",
+      "price": 26000
+    },
+    {
+      "id": 10,
+      "image": "https://example.com/images/cycle10.jpg",
+      "name": "Commute Easy",
+      "details": "Comfortable and efficient for daily commutes.",
+      "price": 14000
+    }
+  ]
+  
