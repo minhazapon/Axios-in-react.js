@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom"
 
-
 function Nav() {
 
     const NavS = <>
-
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/Api'>Api</NavLink></li>
-
     </>
 
     return (
