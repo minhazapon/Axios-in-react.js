@@ -5,7 +5,6 @@ function Details({ information }) {
 
     return (
         <div>
-
             <div className="card w-96 h-[500px] bg-black text-white card-md shadow-sm">
                 <div className="">
                     <div>
