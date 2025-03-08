@@ -1,12 +1,9 @@
+import axios from "axios";
 
+const Api = axios.create({
+    baseURL: "https://jsonplaceholder.typicode.com"
+})
 
-function AxApi() {
-
-    return (
-        <div>
-
-        </div>
-    )
+export const AllData = () => {
+    return Api.get('/posts')
 }
-
-export default AxApi
