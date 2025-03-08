@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { AllData } from "./AxApi"
 import { useEffect } from "react"
+import Details from "./Details"
 
 function Route() {
 
@@ -20,22 +21,10 @@ function Route() {
             <div>
                 <div className="m-20">
                     <p className="text-center text-5xl font-bold text-black">Axios Data</p>
-                    <div>
-                        <div>
+                    <div className=" flex justify-center mt-10 ">
+                        <div className=" grid  md:grid-cols-3 gap-5 ">
                             {
-                                dataZ.map(information => <ul key={information.id}>
-                                    <div>
-                                        <div className="card w-96 bg-black text-white card-md shadow-sm">
-                                            <div className="card-body">
-                                                <h2 className="card-title">{dataZ.title}</h2>
-                                                <p>{dataZ.body}</p>
-                                                <div className="justify-end card-actions">
-                                                    <button className="btn bg-black text-white">Buy Now</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>)
+                                dataZ.map(information => <Details key={information.id} information={information}></Details>)
                             }
                         </div>
                     </div>
