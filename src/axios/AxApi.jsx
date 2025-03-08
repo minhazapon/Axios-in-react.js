@@ -1,7 +1,6 @@
 
 
-function Route() {
-
+function AxApi() {
 
     return (
         <div>
@@ -10,4 +9,4 @@ function Route() {
     )
 }
 
-export default Route
+export default AxApi
