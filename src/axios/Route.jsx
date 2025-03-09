@@ -8,11 +8,23 @@ function Route() {
     const [dataZ, setData] = useState([])
 
     const [addData, setAddData] = useState({
-
         title: "",
         body: ""
-
     })
+
+    const handleAddData = (e) => {
+
+        const name = e.target.name
+        const value = e.target.value
+
+        setAddData((preValue) => {
+            return {
+                ...preValue,
+                [name]: value
+            }
+        })
+
+    }
 
     const GetPostData = async () => {
         const res = await AllData()
