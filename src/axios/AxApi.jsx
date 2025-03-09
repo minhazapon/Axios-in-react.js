@@ -9,7 +9,5 @@ export const AllData = () => {
 }
 
 export const DeletePost = (id) => {
-
     return Api.delete(`/posts/${id}`)
-
 }
