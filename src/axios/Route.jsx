@@ -17,8 +17,18 @@ function Route() {
     }, [])
 
     const handleDelete = async (id) => {
-        const res = await DeletePost(id)
-        console.log(res)
+        try {
+            const res = await DeletePost(id)
+            if (res.status === 200) {
+
+                const newPostData = dataZ.filter((curData) => {
+                    return curData.id !== id
+                })
+                setData(newPostData)
+            }
+        } catch (error) {
+            console.log(res.error)
+        }
     }
 
     return (
