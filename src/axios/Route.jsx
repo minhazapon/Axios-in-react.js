@@ -7,11 +7,11 @@ import Swal from "sweetalert2"
 function Route() {
 
     const [dataZ, setData] = useState([])
-
     const [addData, setAddData] = useState({
         title: "",
         body: ""
     })
+    const [update, setUpdateApi] = useState({})
 
     const handleAddData = (e) => {
         const name = e.target.name
@@ -70,6 +70,11 @@ function Route() {
         }
     }
 
+    //update
+    const handleUpdate = (curData) => {
+        setUpdateApi(curData)
+    }
+
     return (
         <>
             <div>
@@ -104,6 +109,7 @@ function Route() {
                                 dataZ.map(information => <Details key={information.id}
                                     information={information}
                                     handleDelete={handleDelete}
+                                    handleUpdate={handleUpdate}
                                 ></Details>)
                             }
                         </div>
