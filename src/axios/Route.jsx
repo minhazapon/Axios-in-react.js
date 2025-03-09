@@ -49,12 +49,16 @@ function Route() {
                                 <input
                                     required
                                     className=" h-[30px] w-[300px] p-2 border-[1px]"
+                                    value={addData.title}
+                                    onChange={handleAddData}
                                     name="title"
                                     placeholder="Add Title"
                                     type="text" />
                                 <input
                                     required
                                     className="h-[30px] w-[300px] p-2 border-[1px]"
+                                    value={addData.body}
+                                    onChange={handleAddData}
                                     name="body"
                                     placeholder="Add Body"
                                     type="text" />
