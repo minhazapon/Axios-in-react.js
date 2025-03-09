@@ -7,6 +7,13 @@ function Route() {
 
     const [dataZ, setData] = useState([])
 
+    const [addData, setAddData] = useState({
+
+        title: "",
+        body: ""
+
+    })
+
     const GetPostData = async () => {
         const res = await AllData()
         setData(res.data)
