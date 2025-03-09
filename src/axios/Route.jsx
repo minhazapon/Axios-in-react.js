@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AllData, DeletePost } from "./AxApi"
+import { AllData, AllPosts, DeletePost } from "./AxApi"
 import { useEffect } from "react"
 import Details from "./Details"
 
@@ -21,6 +21,19 @@ function Route() {
                 [name]: value
             }
         })
+    }
+
+    const addPostdata = async () => {
+        const res = await AllPosts(addData)
+        if (res.status === 201) {
+            setData([...dataZ, res.data])
+            setAddData({ title: "", body: "" })
+        }
+    }
+
+    const handleAddSubmit = (e) => {
+        e.preventDefault()
+        addPostdata()
     }
 
     const GetPostData = async () => {
@@ -54,7 +67,7 @@ function Route() {
                     <p className="text-center text-5xl font-bold text-black">Axios Data</p>
                     <div className=" flex justify-center ">
                         <div className=" flex justify-center mt-10 border-[1px] p-5 w-fit rounded-xl bg-violet-50 ">
-                            <form className=" flex-col md:flex-row lg:flex-row flex items-center gap-3 ">
+                            <form onSubmit={handleAddSubmit} className=" flex-col md:flex-row lg:flex-row flex items-center gap-3 ">
                                 <input
                                     required
                                     className=" h-[30px] w-[300px] p-2 border-[1px]"
