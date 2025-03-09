@@ -13,17 +13,14 @@ function Route() {
     })
 
     const handleAddData = (e) => {
-
         const name = e.target.name
         const value = e.target.value
-
         setAddData((preValue) => {
             return {
                 ...preValue,
                 [name]: value
             }
         })
-
     }
 
     const GetPostData = async () => {
