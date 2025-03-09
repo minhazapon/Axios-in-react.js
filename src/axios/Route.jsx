@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AllData } from "./AxApi"
+import { AllData, DeletePost } from "./AxApi"
 import { useEffect } from "react"
 import Details from "./Details"
 
@@ -15,6 +15,12 @@ function Route() {
     useEffect(() => {
         GetPostData()
     }, [])
+
+    const handleDelete = async (id) => {
+
+        const res = await DeletePost(id)
+
+    }
 
     return (
         <>
@@ -33,7 +39,10 @@ function Route() {
                     <div className=" flex justify-center mt-10 ">
                         <div className=" grid  md:grid-cols-3 gap-5 ">
                             {
-                                dataZ.map(information => <Details key={information.id} information={information}></Details>)
+                                dataZ.map(information => <Details key={information.id}
+                                    information={information}
+                                    handleDelete={handleDelete}
+                                ></Details>)
                             }
                         </div>
                     </div>
