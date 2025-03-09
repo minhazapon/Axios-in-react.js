@@ -18,6 +18,7 @@ function Route() {
 
     const handleDelete = async (id) => {
         const res = await DeletePost(id)
+        console.log(res)
     }
 
     return (
