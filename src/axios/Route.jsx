@@ -2,6 +2,7 @@ import { useState } from "react"
 import { AllData, AllPosts, DeletePost } from "./AxApi"
 import { useEffect } from "react"
 import Details from "./Details"
+import Swal from "sweetalert2"
 
 function Route() {
 
@@ -28,6 +29,15 @@ function Route() {
         if (res.status === 201) {
             setData([...dataZ, res.data])
             setAddData({ title: "", body: "" })
+        }
+
+        if (res) {
+            Swal.fire({
+                title: 'Added Done!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
         }
     }
 
