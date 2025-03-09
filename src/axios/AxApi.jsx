@@ -11,3 +11,7 @@ export const AllData = () => {
 export const DeletePost = (id) => {
     return Api.delete(`/posts/${id}`)
 }
+
+export const AllPosts = (data) => {
+    return Api.post('/posts', data)
+}
