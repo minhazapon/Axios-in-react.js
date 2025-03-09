@@ -71,9 +71,19 @@ function Route() {
     }
 
     //update
-    const handleUpdate = (curData) => {
-        setUpdateApi(curData)
+    const handleUpdate = (information) => {
+        setUpdateApi(information)
     }
+
+    //update data
+    useEffect(() => {
+
+        update && setAddData({
+            title: update.title || "",
+            body: update.body || ""
+        })
+
+    }, [update])
 
     return (
         <>
