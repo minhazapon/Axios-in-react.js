@@ -7,3 +7,9 @@ const Api = axios.create({
 export const AllData = () => {
     return Api.get('/posts')
 }
+
+export const DeletePost = (id) => {
+
+    return Api.delete(`/posts/${id}`)
+
+}
