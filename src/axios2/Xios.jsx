@@ -7,6 +7,16 @@ function Xios() {
 
     const [XData, setData] = useState([])
 
+    const [addData, setAddData] = useState({
+        name: "",
+        email: "",
+    })
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+    }
+
     const GetAllData = async () => {
         const res = await Info();
         setData(res.data)
@@ -32,14 +42,12 @@ function Xios() {
         }
     }
 
-
-
     return (
         <div className="m-10">
             <p className=" text-2xl text-center text-black">All Axios Comments</p>
             <div className=" flex justify-center ">
                 <div className=" flex justify-center mt-10 border-[1px] p-5 w-fit rounded-xl bg-violet-50 ">
-                    <form className=" flex-col md:flex-row lg:flex-row flex items-center gap-3 ">
+                    <form onSubmit={handleSubmit} className=" flex-col md:flex-row lg:flex-row flex items-center gap-3 ">
                         <input
                             required
                             className=" h-[30px] w-[300px] p-2 border-[1px]"

@@ -11,3 +11,7 @@ export const Info = () => {
 export const deletePost = (id) => {
     return AllApi.delete(`/comments/${id}`)
 }
+
+export const AddData = (data) => {
+    return AllApi.post('/comments', data)
+}
