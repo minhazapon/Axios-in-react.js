@@ -7,10 +7,12 @@ import Swal from "sweetalert2"
 function Route() {
 
     const [dataZ, setData] = useState([])
+
     const [addData, setAddData] = useState({
         title: "",
         body: ""
     })
+
     const [update, setUpdateApi] = useState({})
 
     const handleAddData = (e) => {

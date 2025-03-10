@@ -15,7 +15,7 @@ function Details({ information, handleDelete, handleUpdate }) {
                         <h2 className="card-title">Title: {title} </h2>
                         <p className=" mt-6 ">Body: {body} </p>
                         <div className=" flex justify-end items-center gap-2 mt-5">
-                            <button onClick={() => handleUpdate()} className="btn bg-black text-white">EDIT</button>
+                            <button onClick={() => handleUpdate(information)} className="btn bg-black text-white">EDIT</button>
                             <button onClick={() => handleDelete(id)} className="btn bg-red-600 text-white">DELETE</button>
                         </div>
                     </div>

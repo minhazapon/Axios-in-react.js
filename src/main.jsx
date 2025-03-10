@@ -9,6 +9,7 @@ import {
 import RootAppLayOut from './RootAppLayOut';
 import Home from './Home';
 import Api from './Api';
+import Xios from './axios2/Xios';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/Api",
         element: <Api></Api>,
+      },
+      {
+        path: "/xios",
+        element: <Xios></Xios>,
       },
     ],
   },
