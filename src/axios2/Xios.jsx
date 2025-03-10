@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Info } from "./DataFile"
+import Xdeatils from "./Xdetails";
 
 
 function Xios() {
@@ -17,17 +18,14 @@ function Xios() {
 
     return (
         <div className="m-10">
-
             <p className=" text-2xl text-center text-black">All Axios Comments</p>
-
-            <div>
-                <div>
+            <div className=" flex justify-center mt-10 ">
+                <div className=" grid md:grid-cols-3 gap-5 ">
                     {
-                        XData.map(cmntValue => <Comments key={cmntValue.id} XData={XData} ></Comments>)
+                        XData.map(cmntValue => <Xdeatils key={cmntValue.id} cmntValue={cmntValue}  ></Xdeatils>)
                     }
                 </div>
             </div>
-
         </div>
     )
 }

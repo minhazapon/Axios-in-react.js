@@ -1,13 +1,13 @@
 
 
-function Xdeatils({ XData }) {
+function Xdeatils({ cmntValue }) {
 
-    const { id, name, email } = XData
+    const { id, name, email } = cmntValue
 
     return (
         <div>
             <div>
-                <div className="card w-96 bg-base-100 card-lg shadow-sm">
+                <div className="card w-96 h-[200px] bg-black text-white card-lg shadow-sm">
                     <div className="card-body">
                         <h2 className="card-title"> {name} </h2>
                         <p> {email} </p>
