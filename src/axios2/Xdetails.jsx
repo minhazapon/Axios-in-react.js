@@ -1,6 +1,6 @@
 
 
-function Xdeatils({ cmntValue }) {
+function Xdeatils({ cmntValue, handleDelete }) {
 
     const { id, name, email } = cmntValue
 
@@ -15,7 +15,7 @@ function Xdeatils({ cmntValue }) {
                     </div>
                     <div className=" flex justify-end gap-5 p-4 ">
                         <button className=" btn bg-green-700 text-white ">EDIT</button>
-                        <button className=" btn bg-red-700 text-white ">DELETE</button>
+                        <button onClick={() => handleDelete(id)} className=" btn bg-red-700 text-white ">DELETE</button>
                     </div>
                 </div>
             </div>

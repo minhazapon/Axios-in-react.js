@@ -17,20 +17,18 @@ function Xios() {
     }, [])
 
     const handleDelete = async (id) => {
-
         try {
 
             const res = await deletePost(id);
-            if (res.status === 2000) {
+            if (res.status === 200) {
                 const DeletePostData = XData.filter(DataValue => {
                     return DataValue.id !== DataValue
                 })
+                setData(DeletePostData)
             }
-
         } catch (error) {
             console.log(error)
         }
-
     }
 
     return (
