@@ -61,12 +61,12 @@ function Xios() {
             const res = await deletePost(id);
             if (res.status === 200) {
                 const DeletePostData = XData.filter(DataValue => {
-                    return DataValue.id !== DataValue
+                    return DataValue.id !== id
                 })
                 setData(DeletePostData)
             }
         } catch (error) {
-            console.log(error)
+            console.log(error.res)
         }
     }
 
