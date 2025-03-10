@@ -12,6 +12,17 @@ function Xios() {
         email: "",
     })
 
+    const handleAddData = () => {
+        const name = e.target.name
+        const value = e.target.value
+        setAddData((PreValue) => {
+            return {
+                ...PreValue,
+                [name]: value
+            }
+        })
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
 
@@ -51,12 +62,16 @@ function Xios() {
                         <input
                             required
                             className=" h-[30px] w-[300px] p-2 border-[1px]"
+                            value={addData.name}
+                            onChange={handleAddData}
                             name="title"
                             placeholder="Add Title"
                             type="text" />
                         <input
                             required
                             className="h-[30px] w-[300px] p-2 border-[1px]"
+                            value={addData.email}
+                            onChange={handleAddData}
                             name="body"
                             placeholder="Add Body"
                             type="text" />
