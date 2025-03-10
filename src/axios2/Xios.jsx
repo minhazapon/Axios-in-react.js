@@ -3,7 +3,6 @@ import { AddData, deletePost, Info } from "./DataFile"
 import Xdeatils from "./Xdetails";
 import Swal from "sweetalert2";
 
-
 function Xios() {
 
     const [XData, setData] = useState([])
@@ -13,7 +12,7 @@ function Xios() {
         email: "",
     })
 
-    const handleAddData = () => {
+    const handleAddData = (e) => {
         const name = e.target.name
         const value = e.target.value
         setAddData((PreValue) => {
@@ -82,22 +81,21 @@ function Xios() {
                             className=" h-[30px] w-[300px] p-2 border-[1px]"
                             value={addData.name}
                             onChange={handleAddData}
-                            name="title"
-                            placeholder="Add Title"
+                            name="name"
+                            placeholder="Add Name"
                             type="text" />
                         <input
                             required
                             className="h-[30px] w-[300px] p-2 border-[1px]"
                             value={addData.email}
                             onChange={handleAddData}
-                            name="body"
-                            placeholder="Add Body"
+                            name="email"
+                            placeholder="Add Email"
                             type="text" />
                         <input className=" bg-blue-900 text-white h-[30px] w-[300px] cursor-pointer " type="submit" value="Add" />
                     </form>
                 </div>
             </div>
-
             <div className=" flex justify-center mt-10 ">
                 <div className=" grid md:grid-cols-3 gap-5 ">
                     {
