@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { deletePost, Info } from "./DataFile"
+import { AddData, deletePost, Info } from "./DataFile"
 import Xdeatils from "./Xdetails";
+import Swal from "sweetalert2";
 
 
 function Xios() {
@@ -23,9 +24,26 @@ function Xios() {
         })
     }
 
+    const addDataPost = async () => {
+        const res = await AddData(addData);
+        if (res.status === 201) {
+
+            setData([...XData, res.data])
+            setAddData({ name: "", email: "" })
+        }
+        if (res) {
+            Swal.fire({
+                title: 'Added Done!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
-
+        addDataPost()
     }
 
     const GetAllData = async () => {
