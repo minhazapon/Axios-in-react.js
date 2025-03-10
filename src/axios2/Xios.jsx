@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Info } from "./DataFile"
+import { deletePost, Info } from "./DataFile"
 import Xdeatils from "./Xdetails";
 
 
@@ -16,13 +16,30 @@ function Xios() {
         GetAllData();
     }, [])
 
+    const handleDelete = async (id) => {
+
+        try {
+
+            const res = await deletePost(id);
+            if (res.status === 2000) {
+                const DeletePostData = XData.filter(DataValue => {
+                    return DataValue.id !== DataValue
+                })
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
+
     return (
         <div className="m-10">
             <p className=" text-2xl text-center text-black">All Axios Comments</p>
             <div className=" flex justify-center mt-10 ">
                 <div className=" grid md:grid-cols-3 gap-5 ">
                     {
-                        XData.map(cmntValue => <Xdeatils key={cmntValue.id} cmntValue={cmntValue}  ></Xdeatils>)
+                        XData.map(cmntValue => <Xdeatils key={cmntValue.id} cmntValue={cmntValue} handleDelete={handleDelete}  ></Xdeatils>)
                     }
                 </div>
             </div>

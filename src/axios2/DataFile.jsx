@@ -7,3 +7,7 @@ const AllApi = axios.create({
 export const Info = () => {
     return AllApi.get('/comments')
 }
+
+export const deletePost = (id) => {
+    return AllApi.delete(`/comments/${id}`)
+}
